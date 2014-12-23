@@ -1,0 +1,101 @@
+
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"><i class="icon icon-back-blue"></i><span>Back</span></a></div>
+    <div class="center sliding">Add trust line</div>
+  </div>
+</div>
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="add-trustline" class="page">
+    <!-- Scrollable page content-->
+    <div class="page-content">
+      <form id="add-trustline-form">
+        <div class="content-block-title">Info</div>
+        <div class="list-block">
+          <ul>
+            <li>
+            <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-input">
+                    <input id="trust-name" name="trust-name" type="text" placeholder="Trustline name">
+                  </div>
+                </div>
+              </div>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div style="position:relative" class="item-input">
+                    <input id="trust-address" style="width: 90%" name="contact-name" type="text" placeholder="Ripple address">
+                    <div class="input-qr"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-input">
+                    <input id="trust-amount" name="contact-address" type="text" placeholder="Amount">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+             <a href="#" class="item-link smart-select">
+              <!-- select -->
+              <select  data-backonselect="true" id="trust-currency" name="currency">
+                <option value="XRP">XRP - Ripples</option>
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="BTC">BTC - Bitcoin</option>
+                <option value="LTC">LTC - Litecoin</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+                <option value="CNY">CNY - Chinese Yuan</option>
+                <option value="INR">INR - Indian Rupee</option>
+                <option value="RUB">RUB - Russian Ruble</option>
+                <option value="GBP">GBP - British Pound</option>
+                <option value="CAD">CAD - Canadian Dollar</option>
+                <option value="BRL">BRL - Brazilian Real</option>
+                <option value="CHF">CHF - Swiss Franc</option>
+                <option value="DKK">DKK - Danish Krone</option>
+                <option value="NOK">NOK - Norwegian Krone</option>
+                <option value="SEK">SEK - Swedish Krona</option>
+                <option value="CZK">CZK - Czech Koruna</option>
+                <option value="PLN">PLN - Polish Zloty</option>
+                <option value="AUD">AUD - Australian Dollar</option>
+                <option value="MXN">MXN - Mexican Peso</option>
+                <option value="KRW">KRW - South Korean Won</option>
+                <option value="TWD">TWD - New Taiwan Dollar</option>
+                <option value="HKD">HKD - Hong Kong Dollar</option>
+                <option value="KES">KES - Kenyan Shilling</option>
+                <option value="AMD">AMD - Armenian Drams</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <!-- Select label -->
+                  <div class="item-title">Currency</div>
+                  <!-- Selected value, not required -->
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div> 
+      <div class="content-block-title">Quality</div>
+      <div class="content-block">
+
+        <div class="content-block-inner">
+          <div class="knob-container">
+          <input type="text" class="knob" data-min="1" data-max="100" data-width="150" value="1">
+          </div>
+
+        </div>
+      </div>
+
+      <a href="main.html" class="item-link button button-big button-submit">Grant trust</a> 
+    </form>
+  </div>
+</div>
+</div>
