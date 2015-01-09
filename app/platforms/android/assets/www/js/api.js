@@ -287,7 +287,7 @@ function refreshInfo()
 			info.account_data = {};
 			info.account_data.Account = result.account_id;
 		}
-		info.balance = info.account_data.Balance ? (info.account_data.Balance)/1000000 : 0;
+		balance = info.account_data.Balance ? (info.account_data.Balance)/1000000 : 0;
 		$$("#xrp-amount").text(toFixed(balance,1));
 		$$('#xrp-usd').html("USD<span>"+toFixed(balance*0.006,1)+"</span>");
 	});

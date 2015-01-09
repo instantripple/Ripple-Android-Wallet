@@ -26,3 +26,13 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+# Tools for VS Apache Cordova
+
+app/bld
+app/bin
+
+# VS
+
+*.suo
+*.jsproj.user

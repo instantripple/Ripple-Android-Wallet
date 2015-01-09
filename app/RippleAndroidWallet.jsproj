@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|iOS">
+      <Configuration>Debug</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-x64">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-x86">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows Phone 8">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows Phone 8</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows Phone (Universal)">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Android">
+      <Configuration>Release</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|iOS">
+      <Configuration>Release</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-x64">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-x86">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-ARM">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows Phone 8">
+      <Configuration>Release</Configuration>
+      <Platform>Windows Phone 8</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows Phone (Universal)">
+      <Configuration>Release</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Android">
+      <Configuration>Distribution</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|iOS">
+      <Configuration>Distribution</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-AnyCPU">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-x64">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-x86">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-ARM">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows Phone 8">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows Phone 8</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows Phone (Universal)">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\app\www\css\app.css">
+      <Link>www\css\app.css</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\css\framework7.css">
+      <Link>www\css\framework7.css</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\css\responsive.css">
+      <Link>www\css\responsive.css</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\form.html">
+      <Link>www\form.html</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\icon.png">
+      <Link>www\icon.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\circle.png">
+      <Link>www\img\circle.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\delete30.png">
+      <Link>www\img\delete30.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\doc-2x.svg">
+      <Link>www\img\doc-2x.svg</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\doc.svg">
+      <Link>www\img\doc.svg</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\down.png">
+      <Link>www\img\down.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\i-f7.png">
+      <Link>www\img\i-f7.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\i-form-calendar.png">
+      <Link>www\img\i-form-calendar.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\i-form-checkbox-black.png">
+      <Link>www\img\i-form-checkbox-black.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\i-form-checkbox-blue.png">
+      <Link>www\img\i-form-checkbox-blue.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\i-form-checkbox-white.png">
+      <Link>www\img\i-form-checkbox-white.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\i-form-comment.png">
+      <Link>www\img\i-form-comment.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\i-form-email.png">
+      <Link>www\img\i-form-email.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\i-form-gender.png">
+      <Link>www\img\i-form-gender.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\i-form-name.png">
+      <Link>www\img\i-form-name.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\i-form-password.png">
+      <Link>www\img\i-form-password.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\i-form-radio-black.png">
+      <Link>www\img\i-form-radio-black.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\i-form-radio-blue.png">
+      <Link>www\img\i-form-radio-blue.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\i-form-radio-white.png">
+      <Link>www\img\i-form-radio-white.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\i-form-settings.png">
+      <Link>www\img\i-form-settings.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\i-form-tel.png">
+      <Link>www\img\i-form-tel.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\i-form-toggle.png">
+      <Link>www\img\i-form-toggle.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\i-form-url.png">
+      <Link>www\img\i-form-url.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\iconmonstr-plus-5-icon.svg">
+      <Link>www\img\iconmonstr-plus-5-icon.svg</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\InstantRippleAppLogo.png">
+      <Link>www\img\InstantRippleAppLogo.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\logo.png">
+      <Link>www\img\logo.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\merged.json">
+      <Link>www\img\merged.json</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\qr-2x.svg">
+      <Link>www\img\qr-2x.svg</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\qr.svg">
+      <Link>www\img\qr.svg</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\receive.png">
+      <Link>www\img\receive.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\ripple-logo-mini.png">
+      <Link>www\img\ripple-logo-mini.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\send.png">
+      <Link>www\img\send.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\slr2-2x.svg">
+      <Link>www\img\slr2-2x.svg</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\slr2.svg">
+      <Link>www\img\slr2.svg</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\up.png">
+      <Link>www\img\up.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\wireless.png">
+      <Link>www\img\wireless.png</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\wireless8-2x.svg">
+      <Link>www\img\wireless8-2x.svg</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\img\wireless8.svg">
+      <Link>www\img\wireless8.svg</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\index.html">
+      <Link>www\index.html</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\js\aes.js">
+      <Link>www\js\aes.js</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\js\api.js">
+      <Link>www\js\api.js</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\js\app.js">
+      <Link>www\js\app.js</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\js\base64.js">
+      <Link>www\js\base64.js</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\js\cordova-control.js">
+      <Link>www\js\cordova-control.js</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\js\framework7.js">
+      <Link>www\js\framework7.js</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\js\framework7.min.js">
+      <Link>www\js\framework7.min.js</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\js\handlebars-v1.3.0.js">
+      <Link>www\js\handlebars-v1.3.0.js</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\js\iscroll.js">
+      <Link>www\js\iscroll.js</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\js\jquery-2.1.1.js">
+      <Link>www\js\jquery-2.1.1.js</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\js\knob.js">
+      <Link>www\js\knob.js</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\js\pbkdf2.js">
+      <Link>www\js\pbkdf2.js</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\js\qrcode.js">
+      <Link>www\js\qrcode.js</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\js\ripple-0.9.1.js">
+      <Link>www\js\ripple-0.9.1.js</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\js\sha256.js">
+      <Link>www\js\sha256.js</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\js\sjcl.js">
+      <Link>www\js\sjcl.js</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\main.html">
+      <Link>www\main.html</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\payment.html">
+      <Link>www\payment.html</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\register.html">
+      <Link>www\register.html</Link>
+    </Content>
+    <Content Include="..\..\..\app\www\trustline.html">
+      <Link>www\trustline.html</Link>
+    </Content>
+    <Content Include="config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="www\css\" />
+    <Folder Include="www\img\" />
+    <Folder Include="www\js\" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>477f2a9c-eda5-47f5-8926-7a453a07e76e</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0'">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Distribution'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CordovaTools\vs-mda-targets\Microsoft.MDA.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CordovaTools\vs-mda-targets\Microsoft.TypeScript.MDA.targets" />
+  <PropertyGroup>
+    <ProjectUISubcaption>Tools for Apache Cordova</ProjectUISubcaption>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetPlatformIdentifier>MDD</TargetPlatformIdentifier>
+  </PropertyGroup>
+  <Target Name="EnsureBuildPrerequisites">
+    <!-- These errors will trigger if building from inside Visual Studio and requirements could not be determined -->
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(NodeJsDir) == ''" Text="Path to NodeJs could not be determined. Please check that NodeJs has been installed." />
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(MDAVsixDir) == ''" Text="Path to the Visual Studio Extension for Tools for Apache Cordova could not be determined. Please check that the extension has been installed." />
+    <!-- These errors will trigger if building from outside Visual Studio (e.g. command line) and environment variables have not been set -->
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(NodeJsDir) == ''" Text="Path to NodeJs has not been specified. Please check that NodeJs has been installed and set the NodeJsDir environment variable before building." />
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(MDAVsixDir) == ''" Text="Path to Visual Studio Extension for Tools for Apache Cordova has not been specified. Please install it and set the MDAVsixDir environment variable before building." />
+    <!-- Sanity check that things exist in the specified places. These are more likely to fail if building outside Visual Studio and the required environment variables have not been set, or set incorrectly. -->
+    <Error Condition="!Exists('$(NodeJsDir)') Or !Exists('$(NodeJsDir)\node.exe')" Text="The specified NodeJs directory $(NodeJsDir) either does not exist, or does not contain node.exe. Please check that NodeJs has been installed, and set the NodeJsDir variable to the correct directory." />
+    <Error Condition="!Exists('$(MDAVsixDir)') Or !Exists('$(MDAVsixDir)\packages\vs-mda')" Text="The specified directory to the Visual Studio extension $(MDAVsixDir)\node.exe either does not exist, or does not contain a packages\vs-mda sub-directory. Please check that the extension directory exists and set the MDAVsixDir variable to the correct directory." />
+    <!-- Installs (if necessary) the supporting Nodejs module -->
+    <Exec Command="&quot;$(MDAVsixDir)&quot;\packages\vs-mda\install &quot;$(NodeJsDir)&quot; &quot;$(MDAVsixDir)&quot;\packages\vs-mda" />
+  </Target>
+</Project>
