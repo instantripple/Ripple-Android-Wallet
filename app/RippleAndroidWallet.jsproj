@@ -100,203 +100,72 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\..\app\www\css\app.css">
-      <Link>www\css\app.css</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\css\framework7.css">
-      <Link>www\css\framework7.css</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\css\responsive.css">
-      <Link>www\css\responsive.css</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\form.html">
-      <Link>www\form.html</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\icon.png">
-      <Link>www\icon.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\circle.png">
-      <Link>www\img\circle.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\delete30.png">
-      <Link>www\img\delete30.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\doc-2x.svg">
-      <Link>www\img\doc-2x.svg</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\doc.svg">
-      <Link>www\img\doc.svg</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\down.png">
-      <Link>www\img\down.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\i-f7.png">
-      <Link>www\img\i-f7.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\i-form-calendar.png">
-      <Link>www\img\i-form-calendar.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\i-form-checkbox-black.png">
-      <Link>www\img\i-form-checkbox-black.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\i-form-checkbox-blue.png">
-      <Link>www\img\i-form-checkbox-blue.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\i-form-checkbox-white.png">
-      <Link>www\img\i-form-checkbox-white.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\i-form-comment.png">
-      <Link>www\img\i-form-comment.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\i-form-email.png">
-      <Link>www\img\i-form-email.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\i-form-gender.png">
-      <Link>www\img\i-form-gender.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\i-form-name.png">
-      <Link>www\img\i-form-name.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\i-form-password.png">
-      <Link>www\img\i-form-password.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\i-form-radio-black.png">
-      <Link>www\img\i-form-radio-black.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\i-form-radio-blue.png">
-      <Link>www\img\i-form-radio-blue.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\i-form-radio-white.png">
-      <Link>www\img\i-form-radio-white.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\i-form-settings.png">
-      <Link>www\img\i-form-settings.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\i-form-tel.png">
-      <Link>www\img\i-form-tel.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\i-form-toggle.png">
-      <Link>www\img\i-form-toggle.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\i-form-url.png">
-      <Link>www\img\i-form-url.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\iconmonstr-plus-5-icon.svg">
-      <Link>www\img\iconmonstr-plus-5-icon.svg</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\InstantRippleAppLogo.png">
-      <Link>www\img\InstantRippleAppLogo.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\logo.png">
-      <Link>www\img\logo.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\merged.json">
-      <Link>www\img\merged.json</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\qr-2x.svg">
-      <Link>www\img\qr-2x.svg</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\qr.svg">
-      <Link>www\img\qr.svg</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\receive.png">
-      <Link>www\img\receive.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\ripple-logo-mini.png">
-      <Link>www\img\ripple-logo-mini.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\send.png">
-      <Link>www\img\send.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\slr2-2x.svg">
-      <Link>www\img\slr2-2x.svg</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\slr2.svg">
-      <Link>www\img\slr2.svg</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\up.png">
-      <Link>www\img\up.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\wireless.png">
-      <Link>www\img\wireless.png</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\wireless8-2x.svg">
-      <Link>www\img\wireless8-2x.svg</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\img\wireless8.svg">
-      <Link>www\img\wireless8.svg</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\index.html">
-      <Link>www\index.html</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\js\aes.js">
-      <Link>www\js\aes.js</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\js\api.js">
-      <Link>www\js\api.js</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\js\app.js">
-      <Link>www\js\app.js</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\js\base64.js">
-      <Link>www\js\base64.js</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\js\cordova-control.js">
-      <Link>www\js\cordova-control.js</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\js\framework7.js">
-      <Link>www\js\framework7.js</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\js\framework7.min.js">
-      <Link>www\js\framework7.min.js</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\js\handlebars-v1.3.0.js">
-      <Link>www\js\handlebars-v1.3.0.js</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\js\iscroll.js">
-      <Link>www\js\iscroll.js</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\js\jquery-2.1.1.js">
-      <Link>www\js\jquery-2.1.1.js</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\js\knob.js">
-      <Link>www\js\knob.js</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\js\pbkdf2.js">
-      <Link>www\js\pbkdf2.js</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\js\qrcode.js">
-      <Link>www\js\qrcode.js</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\js\ripple-0.9.1.js">
-      <Link>www\js\ripple-0.9.1.js</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\js\sha256.js">
-      <Link>www\js\sha256.js</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\js\sjcl.js">
-      <Link>www\js\sjcl.js</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\main.html">
-      <Link>www\main.html</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\payment.html">
-      <Link>www\payment.html</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\register.html">
-      <Link>www\register.html</Link>
-    </Content>
-    <Content Include="..\..\..\app\www\trustline.html">
-      <Link>www\trustline.html</Link>
-    </Content>
     <Content Include="config.xml">
       <SubType>Designer</SubType>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="www\css\" />
-    <Folder Include="www\img\" />
-    <Folder Include="www\js\" />
+    <Content Include="www\css\app.css" />
+    <Content Include="www\css\framework7.css" />
+    <Content Include="www\css\responsive.css" />
+    <Content Include="www\form.html" />
+    <Content Include="www\icon.png" />
+    <Content Include="www\img\circle.png" />
+    <Content Include="www\img\delete30.png" />
+    <Content Include="www\img\doc-2x.svg" />
+    <Content Include="www\img\doc.svg" />
+    <Content Include="www\img\down.png" />
+    <Content Include="www\img\i-f7.png" />
+    <Content Include="www\img\i-form-calendar.png" />
+    <Content Include="www\img\i-form-checkbox-black.png" />
+    <Content Include="www\img\i-form-checkbox-blue.png" />
+    <Content Include="www\img\i-form-checkbox-white.png" />
+    <Content Include="www\img\i-form-comment.png" />
+    <Content Include="www\img\i-form-email.png" />
+    <Content Include="www\img\i-form-gender.png" />
+    <Content Include="www\img\i-form-name.png" />
+    <Content Include="www\img\i-form-password.png" />
+    <Content Include="www\img\i-form-radio-black.png" />
+    <Content Include="www\img\i-form-radio-blue.png" />
+    <Content Include="www\img\i-form-radio-white.png" />
+    <Content Include="www\img\i-form-settings.png" />
+    <Content Include="www\img\i-form-tel.png" />
+    <Content Include="www\img\i-form-toggle.png" />
+    <Content Include="www\img\i-form-url.png" />
+    <Content Include="www\img\iconmonstr-plus-5-icon.svg" />
+    <Content Include="www\img\InstantRippleAppLogo.png" />
+    <Content Include="www\img\logo.png" />
+    <Content Include="www\img\merged.json" />
+    <Content Include="www\img\qr-2x.svg" />
+    <Content Include="www\img\qr.svg" />
+    <Content Include="www\img\receive.png" />
+    <Content Include="www\img\ripple-logo-mini.png" />
+    <Content Include="www\img\send.png" />
+    <Content Include="www\img\slr2-2x.svg" />
+    <Content Include="www\img\slr2.svg" />
+    <Content Include="www\img\up.png" />
+    <Content Include="www\img\wireless.png" />
+    <Content Include="www\img\wireless8-2x.svg" />
+    <Content Include="www\img\wireless8.svg" />
+    <Content Include="www\index.html" />
+    <Content Include="www\js\aes.js" />
+    <Content Include="www\js\api.js" />
+    <Content Include="www\js\app.js" />
+    <Content Include="www\js\base64.js" />
+    <Content Include="www\js\cordova-control.js" />
+    <Content Include="www\js\framework7.js" />
+    <Content Include="www\js\framework7.min.js" />
+    <Content Include="www\js\handlebars-v1.3.0.js" />
+    <Content Include="www\js\iscroll.js" />
+    <Content Include="www\js\jquery-2.1.1.js" />
+    <Content Include="www\js\knob.js" />
+    <Content Include="www\js\pbkdf2.js" />
+    <Content Include="www\js\qrcode.js" />
+    <Content Include="www\js\ripple-0.9.1.js" />
+    <Content Include="www\js\sha256.js" />
+    <Content Include="www\js\sjcl.js" />
+    <Content Include="www\main.html" />
+    <Content Include="www\payment.html" />
+    <Content Include="www\register.html" />
+    <Content Include="www\trustline.html" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>477f2a9c-eda5-47f5-8926-7a453a07e76e</ProjectGuid>
