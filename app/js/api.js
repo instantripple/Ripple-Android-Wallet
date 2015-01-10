@@ -190,7 +190,7 @@ function showPaymentForm(adr) {
 }
 var z;
 function getCurrencies() {
-    remote.request_account_lines(info.account_data.Account, 0, 0, function (e, i) {
+    remote.requestAccountLines({ account: info.account_data.Account }, function (e, i) {
         currencies = uniqueCurrencies(i);
         z = i;
         console.log("Account lines:");
@@ -210,7 +210,7 @@ function getCurrencies() {
                 $$('#' + val.currency + "-inUsd").html(toFixed(val.inUSD, 2));
             });
         }, 1000);
-    });
+    })};
 }
 
 function uniqueCurrencies(data) {
@@ -265,37 +265,37 @@ function setTrustLine(adr, curreny, value) {
 }
 
 function refreshInfo() {
-    remote.request_account_info(result.account_id, function (e, i) {
+    remote.requestAccountInfo({ account: result.blob.data.account_id }, function(e, i) {
         if (i != undefined)
             info = i;
         else {
             info = {};
             info.account_data = {};
-            info.account_data.Account = result.account_id;
+            info.account_data.Account = result.blob.data.account_id;
         }
         balance = info.account_data.Balance ? (info.account_data.Balance) / 1000000 : 0;
         $$("#xrp-amount").text(toFixed(balance, 1));
         $$('#xrp-usd').html("USD<span>" + toFixed(balance * 0.006, 1) + "</span>");
     });
 
-    remote.request_account_tx({ account: info.account_data.Account, ledger_index_min: -1 }, function (e, i) {
-        i.transactions.forEach(function (val, ind) {
+    remote.request_account_tx({ account: info.account_data.Account, ledger_index_min: -1 }, function(e, i) {
+        i.transactions.forEach(function(val, ind) {
             i.transactions[ind].acc = info.account_data.Account;
         });
         console.log(i);
         var transa = template('history', i);
         $$("#history-entries div").html('').append(transa);
-        setTimeout(function () {
+        setTimeout(function() {
             //historyScroll = new IScroll('#history-entries', {
             //	eventPassthrough: true
             //});
         }, 400);
-        setTimeout(function () {
+        setTimeout(function() {
             //historyScroll.refresh()
         }, 600);
     });
     getCurrencies();
-    setTimeout(function () {
+    setTimeout(function() {
         refreshEvents(eventList);
     }, 2000);
 }
@@ -325,10 +325,11 @@ function auth(user, pass) {
 function completeLogin(res) {
     result = res;
     if (result !== undefined) {
-        remote.request_account_info(result.account_id, function (e, i) {
+        var userAddress = result.blob.data.account_id;
+        remote.request_account_info({ account: userAddress }, function (e, i) {
             info = {};
             info.account_data = {};
-            info.account_data.Account = result.account_id;
+            info.account_data.Account = userAddress;
             loginThat.removeClass('disabled');
             myApp.hidePreloader();
             mainView.loadPage("main.html", true);
