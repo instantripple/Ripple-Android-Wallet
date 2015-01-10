@@ -30,9 +30,9 @@ Handlebars.registerHelper('toFixed', function (v, prec) {
     return toFixed(parseFloat(v) / 1000000, parseInt(prec));
 });
 
-Handlebars.registerHelper('toFixedCurrencies', function (v, prec) {
-    return toFixed(parseFloat(v), parseInt(prec));
-});
+//Handlebars.registerHelper('toFixedCurrencies', function (v, prec) {
+//    return toFixed(parseFloat(v), parseInt(prec));
+//});
 
 Handlebars.registerHelper('shorter', function (v, i) {
     if (findContact(v) != null)
@@ -207,7 +207,11 @@ function getCurrencies() {
         setTimeout(function () {
             currencies.lines.forEach(function (val, ind) {
                 console.log('#' + val.currency + "inUsd: " + val.inUSD);
-                $$('#' + val.currency + "-inUsd").html(toFixed(val.inUSD, 2));
+                if (val.currency == "BTC") {
+                    $$('#' + val.currency + "-inUsd").html(toFixed(val.inUSD, 6));
+                } else {
+                    $$('#' + val.currency + "-inUsd").html(toFixed(val.inUSD, 2));
+                }
             });
         }, 1000);
     });

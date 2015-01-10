@@ -80,10 +80,10 @@
                   </li>
                 </ul>
               </div>  
-             <!--<div class="list-block inset">
+             <div class="list-block inset">
               <a id="login-button" class="item-link button button-big button-submit">Login</a>
-              <a class="register-link" href="register.html">Create new wallet</a>
-             </div>-->
+              <!--<a class="register-link" href="register.html">Create new wallet</a>-->
+             </div>
             </div>
           </form>
         </div>
@@ -222,8 +222,8 @@ account. Only transfer small amounts into your daily usage wallet as needed.</p>
 <script type="text/x-handlebars" id="currencies-template">
   {{#each lines}}
   <li class="currency-added">
-    {{currency}} <span id="{{currency}}-amount">  {{toFixedCurrencies balance 3}}</span>
-   <div class="micro">USD<span id="{{currency}}-inUsd">{{usd}}</span></div> 
+    {{currency}} <span id="{{currency}}-amount">  {{balance}}</span>
+   <div class="micro">USD&nbsp;<span id="{{currency}}-inUsd">{{usd}}</span></div> 
   </li>
   {{/each}}
 </script>
