@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>My App</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <!-- Path to Framework7 Library CSS-->
+  <link rel="stylesheet" href="css/framework7.css">
+  <!-- Path to your custom app styles-->
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Icon font -->
+  <link rel="stylesheet" href="http://i.icomoon.io/public/temp/ba185c9de0/UntitledProject1/style.css">
+  <!-- Phonegap build - cordova support -->
+  <script type="text/javascript" src="cordova.js"></script>
+  <script src="js/cordova-control.js"></script>
+  <!-- Phonegap build - cordova support -->
+</head>
+<body>
+  <!-- Status bar overlay for fullscreen mode-->
+  <div class="statusbar-overlay"></div>
+  <!-- Panels overlay-->
+  <div class="panel-overlay"></div>
+  <!-- Left panel with reveal effect-->
+  <div class="panel panel-left panel-reveal">
+    <div class="content-block">
+      <p>Left panel content goes here</p>
+    </div>
+  </div>
+  <!-- Right panel with cover effect-->
+  <div class="panel panel-right panel-cover">
+    <div class="content-block">
+      <p>Right panel content goes here</p>
+    </div>
+  </div>
+  <!-- Views-->
+  <div class="views">
+    <!-- Your main view, should have "view-main" class-->
+    <div class="view view-main">
+      <!-- Top Navbar-->
+      <div class="navbar startscreen">
+        <div class="navbar-inner">
+          <!-- We have home navbar without left link-->
+          <div class="center sliding">
+            InstantRipple.com
+          </div>
+        </div>
+      </div>
+      <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+      <div class="pages navbar-through toolbar-through">
+        <!-- Page, data-page contains page name-->
+        <div data-page="index" class="page page-index">
+          <!-- Scrollable page content-->
+          <div class="page-content">
+            <form id="login-form">
+              <div class="content-block">
+
+                <center> <img src="img/InstantRippleAppLogo.png"></center>
+
+                <div class="list-block inset">
+                  <ul>
+                   <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-input">
+                          <input type="text" placeholder="Username" id="user-input">
+                        </div>
+                      </div>
+                    </div> 
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-input">
+                          <input type="password" placeholder="Password" id="pass-input">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>  
+             <div class="list-block inset">
+              <a id="login-button" class="item-link button button-big button-submit">Login</a>
+              <a class="register-link" href="register.html">Create new wallet</a>
+             </div>
+            </div>
+          </form>
+        </div>
+        <footer class="powered">
+          <p>Powered by <img src="img/ripple-logo-mini.png"> Ripple Network</p>
+        </footer>
+      </div>
+    </div>
+    <!-- Bottom Toolbar-->
+  </div>
+</div>
+<div class="popup popup-about">
+  <div class="content-block">
+    <center>
+      <h4 id="qr-code-text"></h4>
+      <div id="qr-code"></div>
+      <p><a href="#" class="close-popup item-link button button-big" style="width: 50%; margin-top: 50px">Close</a></p>
+        </center>
+    </div>
+  </center>
+
+</div>
+
+<div class="popup popup-nfc">
+  <div class="content-block">
+    <div id="nfc-close" class="close-button close-popup"></div>
+    <div class="send-options">
+      <div id="nfc-send" class="send-option send">
+        <img src="img/send.png" width="150" height="150">
+        <p>Send</p>
+      </div>
+      <div id="nfc-listen" class="send-option receive">
+        <img src="img/receive.png" width="150" height="150">
+        <p>Receive</p>
+      </div>
+      <div id="nfc-wait" class=" wait">
+        <img src="img/wireless.png" width="150" height="150">
+        <p>Waiting for device...</p>
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="popup popup-create">
+  <form id="contact-form">
+    <div class="content-block">
+      <div class="close-button close-popup"></div>
+      <h2 id="contact-add-edit-tittle">Add/Edit contact</h2>
+      <div class="content-block-title">Contact info</div>
+      <div class="list-block">
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-input">
+                  <input id="contact-name" name="contact-name" type="text" placeholder="Contact name">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-input">
+                  <input style="width: 90%" id="contact-address" name="contact-address" type="text" placeholder="Ripple address">
+                  <div class="input-qr"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div> 
+      <button id="contact-button" class="item-link button button-big button-submit">Save</button> 
+    </div>
+  </form>
+</div>
+
+<div class="popup popup-add-trustline">
+
+</div>
+
+<div class="popup popup-safety-notes">
+
+  <div class="content-block">
+    <div class="close-button close-popup"></div>
+    <h2>Important Safety Notes</h2>
+    <p>All XRPs and IOUs are stored on the Ripple Network and not your device. InstantRipple.com
+does not have access to your username or password. If you lose your information you will lose
+your XRPs and IOUs.</p>
+<p>Payments are irreversible. If you send XRPs or IOUs to an unknown party consider it a
+permanent transaction.</p>
+<p>Keep your mobile device safe. Only install apps you fully trust. Malicious apps can steal your
+information and have full access to your device.</p>
+<p>Reduce your risk by having two wallets. One wallet for daily usage and other as a savings
+account. Only transfer small amounts into your daily usage wallet as needed.</p>
+    </div>
+  </div>
+
+
+
+  <!-- Templates -->
+
+  <script type="text/x-handlebars" id="contacts">
+    <ul>
+      {{#each contacts}}
+      <li>
+        <a href="#" data-id="{{@index}}" data-name="{{name}}" data-address="{{address}}" class="item-link item-content ac-1">
+          <div class="item-media"><i class="icon icon-f7"></i></div>
+          <div class="item-inner">
+            <div class="item-title">{{name}}</div>
+          </div>
+        </a>
+      </li>
+      {{/each}}
+
+    </ul>
+  </script>
+  <script type="text/x-handlebars" id="history">
+    <div class="slide-title">Transaction history</div>
+   {{#each transactions}}
+   {{#if tx.Amount}}
+   <div class="history-entry {{#ifCond acc '==' tx.Destination }} incoming{{else}}outcoming{{/ifCond}}">
+    <div class="history-amount">
+      {{#ifCond acc '==' tx.Destination }}
+      + {{toFixed tx.Amount 1}} XRP from {{shorter tx.Account 18}}
+      {{else}}
+      - {{toFixed tx.Amount 1}} XRP to {{shorter tx.Destination 20}}
+      {{/ifCond}}
+
+    </div>
+  </div>
+  {{/if}}
+
+  {{/each}}
+</script>
+<script type="text/x-handlebars" id="currencies-template">
+  {{#each lines}}
+  <li class="currency-added">
+    {{currency}} <span id="{{currency}}-amount">  {{toFixedCurrencies balance 3}}</span>
+   <div class="micro">USD<span id="{{currency}}-inUsd">{{usd}}</span></div> 
+  </li>
+  {{/each}}
+</script>
+
+<script type="text/x-handlebars" id="trust-lines">
+  {{#each lines}}
+  <li class="trust-added swipeout">
+    <div class="swipeout-content item-content">
+      <div class="item-inner">
+        <div class="item-title">{{shorter account 10}}</div>
+        <div class="item-after trustline">
+          <div class="trust-box">
+            <span class="trust-val trust-max">{{#ifCond balance '>=' 0 }} {{limit}} {{else}} {{limit_peer}} {{/ifCond}}</span>
+            <span class="trust-val trust-current">{{balance}}</span>
+            <div style="width: {{toPercent balance limit limit_peer}}" class="trust-linia {{#ifCond balance '>=' 0 }} green{{else}}red{{/ifCond}}"></div>
+            <hr>
+          </div>
+        </div>
+        <div data-gate-address="{{account}}" data-gate-currency="{{currency}}" data-gate-amount="{{limit}}" class="item-after gate-edit">Edit</div>
+      </div>
+    </div>
+    <div class="swipeout-actions">
+      <div class="swipeout-actions-inner">
+        <a href="#" class="action1">Update</a>
+        <a href="#" class="swipeout-delete">Delete</a>
+      </div>
+    </div>
+  </li>
+  {{/each}}
+</script>
+
+<script src="js/iscroll.js"></script>
+
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="js/knob.js"></script> 
+
+<!--<script src="js/ripple-lib-min.js" type="text/javascript"></script> -->
+<script src="js/sjcl.js" type="text/javascript"></script> 
+<script src="js/ripple-0.10.0.js"></script>
+<script src="js/base64.js"></script>
+<script src="js/qrcode.js"></script>
+<script src="js/handlebars-v1.3.0.js"></script>
+<script src="js/api.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
