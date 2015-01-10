@@ -1,14 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="com.rippleclient.android" version="0.0.1.0" xmlns="http://www.w3.org/ns/widgets">
-  <name>RippleClientAndroidApp</name>
+  <name>Instant Ripple Mobile Client</name>
   <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        A mobile Ripple client.
     </description>
-  <author href="http://cordova.io" email="dev@cordova.apache.org">
-        Apache Cordova Team
-    </author>
   <content src="index.html" />
   <access origin="*" />
   <vs:plugin name="com.chariotsolutions.nfc.plugin" version="0.6.1" />
+  <vs:plugin name="com.mirasense.scanditsdk.plugin" version="1.1.0" />
   <vs:platformSpecificValues />
 </widget>
