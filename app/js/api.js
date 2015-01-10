@@ -210,7 +210,7 @@ function getCurrencies() {
                 $$('#' + val.currency + "-inUsd").html(toFixed(val.inUSD, 2));
             });
         }, 1000);
-    })};
+    });
 }
 
 function uniqueCurrencies(data) {

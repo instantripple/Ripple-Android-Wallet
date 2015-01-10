@@ -431,12 +431,12 @@ $$(document).on('pageInit', function (e) {
         });
         toggleEvents(eventList, "off");
         // run createContentPage func after link was clicked
-        balance = 0;
         refreshInfo();
         $$("#qr-code").html('');
         $$("#qr-code-text").text(info.account_data.Account);
         new QRCode(document.getElementById("qr-code"), info.account_data.Account);
-        if (info.account_data.Balance == undefined) {
+        // Should check for reserve amount first.
+        if (balance < 25) {
             myApp.alert("Your account has not been activated yet. Send some XRPs to <small>" + info.account_data.Account + "</small><center><div style='margin-top: 30px' id='new-qr'></div></center>", "Warning");
             new QRCode(document.getElementById("new-qr"),
                { text: info.account_data.Account, width: 192, height: 192 });
